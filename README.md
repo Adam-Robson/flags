@@ -61,4 +61,4 @@ and any lint errors will appear in the console.
 
 ## Contact
 
-I can be reached by email to adamray312@gmail.com.
+I can be reached by email to adamrayrobson@gmail.com.
