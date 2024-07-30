@@ -19,7 +19,7 @@ export default function Main() {
   } = useCountries();
 
   const filteredCountries: TCountry[] = filterCountries() as TCountry[];
-
+  
   return (
     <main>
       <input 

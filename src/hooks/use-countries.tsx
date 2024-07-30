@@ -8,7 +8,7 @@ export default function useCountries() {
   const [query, setQuery] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
-
+  
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
@@ -28,6 +28,7 @@ export default function useCountries() {
     }
 
     fetchData();
+    console.log("🚀 ~ useEffect ~ fetchData:", fetchData)
   }, []);
 
   const filterCountries = () => {
