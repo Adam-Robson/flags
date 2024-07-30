@@ -2,31 +2,34 @@
 
 ## Description
 
-This is a full-stack web application built with [React](https://react.dev/), and bootstrapped 
-with [Vite](https://vitejs.dev/).  It uses [Supabase](https://supabase.com/) for the 
-[Postgres](https://www.postgresql.org/) database and it displays a searchable list of the flags 
-for every country in the world.
+This is a full-stack web application built with [React](https://react.dev/),
+and bootstrapped with [Vite](https://vitejs.dev/).  It uses
+[Supabase](https://supabase.com/) for a [Postgres](https://www.postgresql.org/)
+database and it displays a searchable list of the flags for every country in the
+world.
 
 ## Table of Contents
 
-* [flags](#flagsofearth-react-ts)
-  * [Description](#description)
-  * [Table of Contents](#table-of-contents)
-  * [Summary](#summary)
-  * [Features](#features)
-  * [Technologies](#technologies)
-  * [Run Locally](#run-locally)
-  * [Authors](#authors)
-  * [Contact](#contact)
+- [Flags](#flags)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Summary](#summary)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Run Locally](#run-locally)
+  - [Authors](#authors)
+  - [Contact](#contact)
 
 ## Summary
 
-This project was built as part of my time in the July 2022 cohort 
-at Alchemy Code Lab, in Portland, Oregon.
+This project was started as part of my time in the July 2022 cohort at Alchemy
+Code Lab, in Portland, Oregon. I have since updated it multiple times so that
+the project remains current with ECMAScript. I also integrated TypeScript.
 
 ## Features
 
-An exercise in making API calls, handling the returned data, and filtering state.  
+An exercise in making API calls, handling the returned data, and filtering
+state.
 
 ## Technologies
 
@@ -52,7 +55,7 @@ The following steps will run the project in the *development* mode:
 
 5. Open `http://localhost:5173` to view it in the browser.
 
-The page will reload if you make edits, 
+The page will reload if you make edits,
 and any lint errors will appear in the console.
 
 ## Authors
@@ -61,4 +64,4 @@ and any lint errors will appear in the console.
 
 ## Contact
 
-I can be reached by email to adamrayrobson@gmail.com.
+I can be reached by email to `adamrayrobson@gmail.com`.
