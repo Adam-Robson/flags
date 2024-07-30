@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 1.2rem;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+select {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}

@@ -1,25 +1,19 @@
-import { test, describe, expect, vi } from 'vitest';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import App from '../App';
 
-describe('App renders Countries', () => {
-  test('renders countries component', () => { // Add async here
+describe('App Component', () => {
+  test('renders without crashing', () => {
+    render(<App />);
+  });
 
-    vi.mock('../services/client', () => {
-      const mockClient = {
-        from: vi.fn().mockReturnValue('countries'),
-        select: vi.fn().mockReturnValue('*'),
-        eq: vi.fn().mockReturnValue('id'),
-        execute: vi.fn().mockReturnValue(Promise.resolve({ data: [], error: null })),
-      };
+  test('renders Header component', () => {
+    render(<App />);
+    expect(screen.getByText(/Flags: Images of Countries-around-the-World's Flags/i)).toBeInTheDocument();
+  });
 
-      return mockClient;
-    });
-
-    const { getByTestId } = render(<App />);
-    const element = getByTestId('countries-div') as HTMLDivElement
-    expect(element).toBeInstanceOf(HTMLDivElement);
+  test('renders Main component', () => {
+    render(<App />);
+    expect(screen.getByText(/All/i)).toBeInTheDocument();
   });
 });
-
-
