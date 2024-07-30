@@ -45,7 +45,7 @@ body {
   text-align: center;
 }
 
-.mat {
+.wrap {
   border: var(--text) 5px double;
   width: 90%;
   margin: 0 auto;
@@ -94,39 +94,6 @@ select:focus,
 button:focus-visible,
 select:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.select {
-  margin-bottom: 7rem;
-}
-
-.flag-grid {
-  min-height: 40rem;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-auto-flow: row;
-}
-
-.country-card {
-  margin: 2rem auto;
-  padding: .25rem;
-  color: var(--text);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.country-card:hover {
-  cursor: pointer;
-}
-
-.flag {
-  margin: 0.3rem;
-  padding: 0.3rem;
-}
-
-.name {
-  visibility: hidden;
 }
 
 .loader {

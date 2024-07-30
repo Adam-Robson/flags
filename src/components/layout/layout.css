@@ -17,5 +17,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+}
+
+
+select {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
 }
