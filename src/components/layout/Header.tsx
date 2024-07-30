@@ -1,7 +1,9 @@
+import './layout.css';
+
 export default function Header() {
   return (
     <div className="header">
-      Header
+      Flags: Images of Countries-around-the-World's Flags
     </div>
   )
 }

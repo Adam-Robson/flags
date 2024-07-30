@@ -1,6 +1,7 @@
-import { TCountry } from '../lib/types';
+import { TCountry } from '../../lib/types';
 import CountryCard from '../country-card/CountryCard';
 import useCountries from '../../hooks/use-countries';
+import './layout.css';
 
 export default function Main() {
 
