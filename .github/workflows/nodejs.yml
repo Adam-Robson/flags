@@ -34,6 +34,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+
+      - name: Set environment variables
+        run: |
+          echo "VITE_APP_SUPABASE_URL=${{ secrets.VITE_APP_SUPABASE_URL }}" >> $GITHUB_ENV
+          echo "VITE_APP_SUPABASE_KEY=${{ secrets.VITE_APP_SUPABASE_KEY }}" >> $GITHUB_ENV
+
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
