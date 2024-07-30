@@ -4,6 +4,9 @@ import { TCountry } from '../lib/types';
 
 export default function useCountries() {
   const [countries, setCountries] = useState<TCountry[]>([]);
+  const [continent, setContinent] = useState<string>('');
+
+ 
 
   useEffect(() => {
     const fetchCountryList = async () => {
@@ -14,7 +17,14 @@ export default function useCountries() {
     fetchCountryList();
   }, []);
 
+  const filterCountries = (continent: string) => {
+    countries.filter((c: TCountry) => c.continent === continent);
+  };
+
   return {
-    countries
+    filterCountries,
+    countries,
+    continent,
+    setContinent
   };
 }
