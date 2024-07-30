@@ -2,6 +2,11 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from '../App';
 
+jest.mock('../services/client', () => ({
+  ...jest.requireActual('../services/client'),
+  fetchCountries: jest.fn()
+}));
+
 describe('App Component', () => {
   test('renders without crashing', () => {
     render(<App />);
