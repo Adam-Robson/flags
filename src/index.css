@@ -49,7 +49,7 @@ body {
   border: var(--text) 5px double;
   width: 90%;
   margin: 0 auto;
-  background: url('/starrynight.gif');
+  background: url('./loading.gif');
   padding: 2rem;
   margin: 1.5rem auto;
   opacity: 0.8;
